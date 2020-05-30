@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <title>+Cidadão</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <!--BARRA SUPERIOR-->
+    <div id="barraSuperior">
+        <div class="logo">
+            <img src="assets/imagens/cidadao.png">
+        </div>
+        <div class="opcoes">
+            <ul style="display: inline;">
+                <a href="http://www.mpsp.mp.br/portal/page/portal/home/home_interna">
+                    <li style="display: inline;">Portal do MPSP </li>
+                </a>
+                <a href="#sobre">
+                    <li style="display: inline;"> Sobre o +Cidadão </li>
+                </a>
+                <a href="#app">
+                    <li style="display: inline;"> Aplicativo </li>
+                </a>
+                <a href="#">
+                    <li style="display: inline;"> Login</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <!--CONTEUDO PRINCIPAL-->
+    <div id="conteudoInicial">
+        <div class="texto">
+            <h1>Como podemos te ajudar?</h1>
+        </div>
+        
+        <div class="opcoesCard">
+            <ul>
+                <a href="#email"><li>
+                    <div class="card1">
+                        <img src="assets/imagens/undraw_envelope_n8lc.svg">
+                        <h2>E-mail</h2>
+                        <h6>Promotorias por região</h6>
+                    </div>
+                </li></a>
+                 <a href="#chatbot"><li>
+               <div class="card1"><img src="assets/imagens/undraw_chat_bot_kli5.svg">
+                        <h2>Chatbot</h2>
+                        <h6>Atendimento por chat</h6>
+                    </div>
+                </li></a>
+                <a href="#app"><li>
+                    <div class="card1"><img src="assets/imagens/undraw_Mobile_app_p3ts.svg">
+                        <h2>Aplicativo</h2>
+                        <h6>Para Android e iOS</h6>
+                    </div>
+                </li></a>
+                <a href="#faq"><li>
+                    <div class="card1"><img src="assets/imagens/undraw_questions_75e0.svg">
+                        <h2>FAQ</h2>
+                        <h6>Perguntas Frequentes</h6>
+                    </div>
+                </li></a>
+            </ul>
+        </div>
+        
+    </div>
+
+    <!--TELA DE EMAIL-->
+    <div id="email">
+        <br>
+        <div class="conteudo">
+            <h1>E-mail</h1><br>
+            <h4>Relação dos e-mails das promotorias de justiça. Clique em sua região no mapa e selecione sua cidade. </h4><br>
+            <button type="button" class="btn btn-primary" id="btnCidades">Cidades</button>
+        </div>
+        
+        <div class="imagem">
+            <a href="email.html"><img src="assets/mapa/padrão.png"></a>
+        </div>
+    </div>
+
+    <!--TELA DE CHATBOT-->
+    <div id="chatbot">
+        <br>
+        <div class="conteudo">
+            <h1>Chatbot</h1><br>
+            <h4>Converse com nosso bot para resolução de pequenos problemas ou dúvidas. </h4><br>
+            <button type="button" class="btn btn-primary" id="btnConversar">Conversar</button>
+        </div>
+        <div class="imagem">
+            <img src="assets/imagens/undraw_Group_chat_unwm.svg">
+        </div>
+    </div>
+    
+    <!--TELA DE APLICATIVO-->
+    <div id="app">
+        <br>
+        <div class="conteudo">
+            <h1>Aplicativo</h1><br>
+            <h4>Baixe nosso aplicativo para um atendimento personalizado com as equipes de promotorias. </h4><br>
+            <img src="assets/imagens/image.png">
+            <img src="assets/imagens/image_preview.png">
+        </div>
+        <div class="qr">
+            <img src="assets/imagens/qr.png">
+        </div>
+        <div class="imagem">
+            <img src="assets/imagens/undraw_my_app_grf2.svg">
+        </div>
+    </div>   
+
+    <!--TELA DE FAQ-->
+
+    <div id="faq">
+        <br>
+        <div class="conteudo">
+            <h1>FAQ</h1><br>
+            <h4>Perguntas Frequentes</h4><br>
+            <h5>Qual a função do +Cidadão?</h5>
+            <h6>Melhorar o atendimento do cidadão por meio digital</h6>
+            <h5>Quais as possibilidades do +Cidadão?</h5>
+            <h6>Contato por e-mail, chatbot e diretamente com a promotoria</h6>
+            <h5>Como posso baixar o aplicativo do +Cidadão?</h5>
+            <h6>Pela Play Store ou Apple Store</h6>
+        </div>
+    </div> 
+        
+
+    <!--TELA DE AUTO EXPLICAÇÃO-->
+    <div id="sobre">
+        <br>
+        <div class="conteudo">
+            <h1>Sobre o +Cidadão</h1><br>
+            <h4>+Cidadão é um projeto de uma parceria entre o Ministério Público do Estado de São Paulo e o Centro Universitário FIAP que está sendo desenvolvido pelos alunos Gustavo Duregger, Murilo Melo e Yan Alexandre com o objetivo de melhorar o atendimento do cidadão com o MPSP assim como suas promotorias. </h4><br>
+            <img src="assets/prototipo/lote/Imagem -1.png">
+            <img src="assets/prototipo/lote/Imagem -2.png">
+        </div>
+        <div class="imagem">
+            <img src="assets/prototipo/lote/aass.png">
+        </div>
+    </div>  
+
+        <script src="scripts/scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+<footer>
+ 
+</footer>
+
+</html>
