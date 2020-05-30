@@ -286,3 +286,19 @@ footer{
    margin-left: 10%;
    margin-right: 10%;
 }
+#areaReg{
+    margin: 5%;
+}
+#botoes img{
+    width: 50px;
+}
+
+#btnAracatuba{
+    position: absolute;
+    float: left;
+    left: 24%;
+    margin-top: -26%;
+}
+#btnAracatuba:hover{
+    opacity: 0.5;
+}
