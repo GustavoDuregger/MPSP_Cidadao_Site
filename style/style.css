@@ -36,6 +36,9 @@ body{
     z-index: 100;
 }
 
+#barraSuperior .menu{
+    display: none;
+}
 #barraSuperior .logo img{
     width: 300px;
     margin-top: -40px;
@@ -290,12 +293,599 @@ footer{
     width: 50px;
 }
 
-#btnAracatuba{
-    position: absolute;
-    float: left;
-    left: 24%;
-    margin-top: -26%;
+
+@media (min-width:320px) and (max-width: 650px){ /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    #barraSuperior .menu{
+        display: inherit;
+        text-align: left;
+        margin-top: -120px;
+        margin-left: 3%;
+    }
+    #barraSuperior .menu img{
+        width: 50px;
+    }
+    
+    #barraSuperior{
+        background-color: rgba(238, 238, 238, 0.521);
+        color: gray;
+        text-align: left;
+        position: fixed;
+        width: 100%;
+        height: 12%;
+        max-width: 100%;
+        z-index: 100;
+    }
+    
+    #barraSuperior .logo img{
+        width: 300px;
+        margin-top: -40px;
+        margin-left: 8%;
+        margin-right: 0%;
+    }
+    #barraSuperior .opcoes{
+        display: none;   
+    }
+    #conteudoInicial{
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    
+    #conteudoInicial .texto h1{
+        font-size: 40px;
+        margin-top: 25%;
+        
+    }
+    .card1{
+        text-align: center;
+        width:280px;
+        height:200px;
+        background-color: rgb(255, 255, 255);
+        border-radius:20px;
+        box-shadow: 5px 5px 80px 10px rgba(0, 0, 0, 0.089);
+        z-index:3;
+        margin-bottom: 5%;
+      }
+      .card1 h6{
+          display: none;
+      }
+    
+    .card1 img{
+        width:50%;
+        height: 50%;
+        margin-top: 10%;
+    }
+    .card1 h2, h6{
+        margin-top: 10%;
+        color: gray;
+        text-align: center;
+    }
+    #conteudoInicial .opcoesCard{
+        margin-top: 5%;
+        z-index: 1000;
+        float: inline-start;
+        z-index:2;
+    }
+    #conteudoInicial .card1:hover{
+        background-color: rgba(255, 82, 122, 0.26);
+    }
+    
+    #conteudoInicial .opcoesCard ul li{
+          margin-left: 1.5%;
+          float: left;
+          display: inline;
+          z-index:4;
+    }
+    
+    #email{
+        margin-top: 30%;
+        margin-left: 10%;
+    }
+    #email .conteudo{
+        width: 80%;
+        margin-top: 800px;
+    }
+    #email .conteudo h1{
+        margin-top: 41%;
+        
+    }
+    #email .imagem{
+       display: none;
+    }
+    #email .imagem img{
+        width: 60%;
+    }
+    #email .conteudo h4{
+        color: gray;
+    }
+    #btnCidades{
+        background-color: #FF1249;
+        border-color: rgb(255, 82, 122);
+        width: 50%;
+        font-size: 20px;
+    }
+    #btnCidades:hover{
+        background-color: white;
+        color: black;
+    }
+    #btnCidades:focus{
+        color: white;
+        background-color: rgb(255, 82, 122);
+        border: #FF1249;
+    }
+    
+    #chatbot{
+        margin-top: 30%;
+        margin-left: 10%;
+    }
+    #chatbot .conteudo{
+        width: 80%;
+    }
+    #chatbot .conteudo h1{
+        margin-top: 10%;
+    }
+    #chatbot .imagem{
+        display: none;
+    }
+    #chatbot .imagem img{
+        width: 50%;
+    }
+    
+    #chatbot .conteudo h4{
+        color: gray;
+    }
+    #btnConversar{
+        background-color: #FF1249;
+        border-color: rgb(255, 82, 122);
+        width: 50%;
+        font-size: 20px;
+    }
+    #btnConversar:hover{
+        background-color: white;
+        color: black;
+    }
+    #btnConversar:focus{
+        color: white;
+        background-color: rgb(255, 82, 122);
+        border: #FF1249;
+    }
+     
+    #app{
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    #app .conteudo{
+        width: 80%;
+    }
+    #app .conteudo h1{
+        margin-top: 10%;
+    }
+    #app .conteudo img{
+        max-width: 80%;
+        margin-top: 2%;
+    }
+    #app .imagem{
+        display: none;
+    }
+    #app .imagem img{
+        width: 50%;
+    }
+    
+    #app .conteudo h4{
+        color: gray;
+    }
+    
+    #app .qr {
+        display: none;
+    }
+    #app .qr img{
+        width: 200px;
+        
+    }
+    
+    #faq{
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    #faq .conteudo{
+        width: 80%;
+    }
+    #faq .conteudo h6{
+        text-align: left;
+        margin-top: 0%;
+        margin-bottom: 2%;
+    }
+    
+    #sobre{
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    #sobre .conteudo{
+        width: 80%;
+    }
+    #sobre .conteudo h1{
+        margin-top: 10%;
+    }
+    #sobre .conteudo img{
+        max-width: 40%;
+        margin-top: 2%;
+    }
+    #sobre .imagem{
+       display: none;
+    }
+    #sobre .imagem img{
+        width: 50%;
+    }
+    
+    #sobre .conteudo h4{
+        color: gray;
+    }
+    
 }
-#btnAracatuba:hover{
-    opacity: 0.5;
+
+
+
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    .card1{
+        width:150px;
+        height:320px;
+      }
+      #barraSuperior .menu{
+        display: none;
+    }
+    .card1 h2{
+        margin-top: 10%;
+        color: gray;
+        text-align: center;
+        font-size: 30px;
+    }
+    .card1 h6{
+        margin-top: 10%;
+        color: gray;
+        text-align: center;
+        font-size: 13px;
+    }
+    #conteudoInicial .opcoesCard{
+        margin-top: 5%;
+        margin-bottom: 300px;
+    }
+}
+@media (min-width:800px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .card1{
+        width:150px;
+        height:320px;
+        background-color: rgb(255, 255, 255);
+        border-radius:20px;
+        box-shadow: 5px 5px 80px 10px rgba(0, 0, 0, 0.089);
+        z-index:3;
+      }
+      #barraSuperior .menu{
+        display: none;
+    }
+    
+    .card1 img{
+        width:80%;
+        height: 50%;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    .card1 h2{
+        margin-top: 10%;
+        color: gray;
+        text-align: center;
+        font-size: 30px;
+    }
+    .card1 h6{
+        margin-top: 10%;
+        color: gray;
+        text-align: center;
+        font-size: 13px;
+    }
+    #conteudoInicial .opcoesCard{
+        margin-top: 5%;
+        margin-bottom: 300px;
+        z-index: 1000;
+        float: inline-start;
+        z-index:2;
+    }
+    
+}
+@media (min-width:1000px) {
+    
+#barraSuperior{
+    background-color: rgba(245, 245, 245, 0.521);
+    color: gray;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    height: 12%;
+    max-width: 100%;
+    z-index: 100;
+}
+#barraSuperior .menu{
+    display: none;
+}
+
+#barraSuperior .logo img{
+    width: 300px;
+    margin-top: -40px;
+}
+
+#barraSuperior .opcoes{
+    margin-left: 320px;
+    margin-top: -100px;
+}
+#barraSuperior .opcoes li{
+    padding: 1%;
+}
+#conteudoInicial{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+#conteudoInicial{
+    background-image: url("assets/imagens/mpsp.jpg");
+    z-index: -1000;
+}
+#conteudoInicial .texto h1{
+    font-size: 50px;
+    
+}
+#conteudoInicial .imagemPredio{
+    text-align: right;
+    overflow: hidden;
+    z-index:1;
+    margin-top: 6%;
+    position: relative; 
+}
+.card1{
+    width:200px;
+    height:320px;
+    background-color: rgb(255, 255, 255);
+    border-radius:20px;
+    box-shadow: 5px 5px 80px 10px rgba(0, 0, 0, 0.089);
+    z-index:3;
+  }
+
+.card1 img{
+    width:80%;
+    height: 50%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.card1 h2, h6{
+    margin-top: 10%;
+    color: gray;
+    text-align: center;
+}
+#conteudoInicial .opcoesCard{
+    margin-top: 5%;
+    z-index: 1000;
+    float: inline-start;
+    z-index:2;
+}
+#conteudoInicial .card1:hover{
+    background-color: rgba(255, 82, 122, 0.26);
+}
+
+#conteudoInicial .opcoesCard ul li{
+      margin-left: 1.5%;
+      float: left;
+      display: inline;
+      z-index:4;
+}
+
+#email{
+    margin-top: 30%;
+    margin-left: 10%;
+}
+#email .conteudo{
+    width: 35%;
+}
+#email .conteudo h1{
+    margin-top: 41%;
+}
+#email .imagem{
+    position: relative;
+    float: left;
+    left: 35%;
+    margin-top: -300px;
+}
+#email .imagem img{
+    width: 60%;
+}
+#email .conteudo h4{
+    color: gray;
+}
+#btnCidades{
+    background-color: #FF1249;
+    border-color: rgb(255, 82, 122);
+    width: 50%;
+    font-size: 20px;
+}
+#btnCidades:hover{
+    background-color: white;
+    color: black;
+}
+#btnCidades:focus{
+    color: white;
+    background-color: rgb(255, 82, 122);
+    border: #FF1249;
+}
+
+#chatbot{
+    margin-top: 30%;
+    margin-left: 10%;
+}
+#chatbot .conteudo{
+    width: 35%;
+}
+#chatbot .conteudo h1{
+    margin-top: 10%;
+}
+#chatbot .imagem{
+    position: relative;
+    float: left;
+    left: 45%;
+    margin-top: -300px;
+}
+#chatbot .imagem img{
+    width: 50%;
+}
+
+#chatbot .conteudo h4{
+    color: gray;
+}
+#btnConversar{
+    background-color: #FF1249;
+    border-color: rgb(255, 82, 122);
+    width: 50%;
+    font-size: 20px;
+}
+#btnConversar:hover{
+    background-color: white;
+    color: black;
+}
+#btnConversar:focus{
+    color: white;
+    background-color: rgb(255, 82, 122);
+    border: #FF1249;
+}
+
+
+#app{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+#app .conteudo{
+    width: 35%;
+}
+#app .conteudo h1{
+    margin-top: 10%;
+}
+#app .conteudo img{
+    max-width: 40%;
+    margin-top: 2%;
+}
+#app .imagem{
+    position: relative;
+    float: left;
+    left: 45%;
+    margin-top: -350px;
+}
+#app .imagem img{
+    width: 50%;
+}
+
+#app .conteudo h4{
+    color: gray;
+}
+
+#app .qr {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+#app .qr img{
+    width: 200px;
+    
+}
+
+#faq{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+#faq .conteudo{
+    width: 80%;
+}
+#faq .conteudo h6{
+    text-align: left;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+#sobre{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+#sobre .conteudo{
+    width: 45%;
+}
+#sobre .conteudo h1{
+    margin-top: 10%;
+}
+#sobre .conteudo img{
+    max-width: 40%;
+    margin-top: 2%;
+}
+#sobre .imagem{
+    position: relative;
+    float: left;
+    left: 50%;
+    margin-top: -500px;
+    width: 80%;
+}
+#sobre .imagem img{
+    width: 50%;
+}
+
+#sobre .conteudo h4{
+    color: gray;
+}
+footer{
+    background-color: rgb(53, 53, 53);
+}
+#conteudoMapa{
+    margin: 10%;
+    margin-top: 5%;
+}
+#mapaImg img{
+    width: 60%;
+}
+#mapatexto{
+    background-color: rgba(128, 128, 128, 0.308);
+    position: relative;
+    float: left;
+    left: 65%;
+    max-width: 40%;
+    height: 120%;
+    margin: 0%;
+    margin-top: -40%;
+    border-radius:10px;
+    box-shadow: 5px 5px 80px 10px rgba(0, 0, 0, 0.089);
+}
+
+#areaReg{
+    margin: 5%;
+}
+#botoes img{
+    width: 50px;
+}
+}
+@media (min-width:1200px) {
+    #conteudoInicial{
+        margin-top: 100px;
+    }
+    .card1{
+        width:250px;
+        height:420px;
+      }
+      #barraSuperior .menu{
+        display: none;
+    }
+    .card1 h2{
+        font-size: 40px;
+    }
+    .card1 h6{
+        margin-top: 10%;
+        color: gray;
+        text-align: center;
+        font-size: 20px;
+    }
+    #conteudoInicial .opcoesCard{
+        margin-bottom: 500px;
+        margin-top: 30px;
+    }
+}
+@media (min-width:1600px) {
+    #conteudoInicial{
+        margin-top: 100px;
+    }
 }
